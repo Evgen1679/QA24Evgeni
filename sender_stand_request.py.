@@ -1,7 +1,7 @@
 # Уксусов Евгений, 24А-я когорта — Инженер по тестированию плюс. Финальный проект.
 
 import configuration
-import requests  
+import requests
 import data
 
 # Создание заказа
@@ -14,4 +14,3 @@ def get_order(track_number):
     get_order_url = f"{configuration.URL_SERVICE}/api/v1/orders/track?t={track_number}"
     response = requests.get(get_order_url)
     return response
-
